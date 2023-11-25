@@ -4,6 +4,16 @@
 .pic-200 {
   display: none;
 }
+
+/* ---------------------------------------------------------------- *\
+    *  # MIXIN ALIGN - aligning the whole elements of the website
+\* ---------------------------------------------------------------- */
+/* ---------------------------------------------*\
+    *  # MIXIN QUERY FOR MIN SIZE AND MAX SIZE
+\* ---------------------------------------------*/
+/* -------------------------------------------------------------------------------------------------------------------*\
+    *  # PIC-200 which shows in query of 0-480px it will display the image if above 480px then it will not be shown
+\* -------------------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width: 0px) and (max-width: 480px) {
   .pic-200 {
     display: block;
@@ -14,13 +24,18 @@
 .pic-300 {
   display: none;
 }
+/* -------------------------------------------------------------------------------------------------------------------*\
+    *  # PIC-300 which shows in between of 481-800px it will display the image if above 800px then it will not be shown
+\* -------------------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width: 481px) and (max-width: 800px) {
   .pic-300 {
     display: block;
     margin: auto;
   }
 }
-
+/* -------------------------------------------------------------------------------------------------------------------*\
+    *  # PIC-400 which shows in 800px it will display the image if above 800px it will be shown as per the max width 
+\* -------------------------------------------------------------------------------------------------------------------*/
 .pic-400 {
   display: block;
   margin: auto;
@@ -39,7 +54,9 @@ body {
   margin: 0;
   padding: 0;
 }
-
+/* ------------- *\
+    *  # MAIN 
+\* ------------- */
 main {
   display: flex;
   justify-content: center;
@@ -49,6 +66,9 @@ main {
   width: 100%;
   background-color: white;
 }
+/* ---------------- *\
+    *  # SECTION
+\* ---------------- */
 
 section {
   display: flex;
@@ -75,25 +95,33 @@ section {
   grid-auto-rows: auto;
   margin-top: 40px;
 }
-
+/* -------------- *\
+    *  # ROW 1
+\* --------------*/
 .row-1 {
   background-color: #4e89ae;
   width: 100%;
   padding: 15px;
 }
-
+/* -------------- *\
+    *  # ROW 2
+\* --------------*/
 .row-2 {
   background-color: #43658b;
   width: 100%;
   padding: 15px;
 }
-
+/* -------------- *\
+    *  # ROW 3
+\* --------------*/
 .row-3 {
   background-color: #ed6663;
   width: 100%;
   padding: 15px;
 }
-
+/* -------------- *\
+    *  # ROW 4
+\* -------------- */
 .row-4 {
   background-color: #ffa372;
   width: 100%;
@@ -109,12 +137,17 @@ section {
   align-items: center;
   flex-direction: row;
 }
+/* ------------------------------------------------------------------------------------------------------------------------ *\
+    *  # CIRCLES for 1, 2, 3 and 4 (circle) it will align in row(vertically) but in 620px it will be column(horizontally
+\* ------------------------------------------------------------------------------------------------------------------------ */
 @media screen and (min-width: 0) and (max-width: 620px) {
   .circles {
     flex-direction: column;
   }
 }
-
+/* ---------------- *\
+    *  # CIRCLE 1
+\* ---------------- */
 .circle-1 {
   width: 70px;
   height: 70px;
@@ -122,7 +155,9 @@ section {
   border-radius: 50%;
   margin: 5px;
 }
-
+/* ---------------- *\
+    *  # CIRCLE 2
+\* ---------------- */
 .circle-2 {
   width: 80px;
   height: 80px;
@@ -130,7 +165,9 @@ section {
   border-radius: 50%;
   margin: 5px;
 }
-
+/* ---------------- *\
+    *  # CIRCLE 3
+\* ---------------- */
 .circle-3 {
   width: 90px;
   height: 90px;
@@ -138,7 +175,9 @@ section {
   border-radius: 50%;
   margin: 5px;
 }
-
+/* ---------------- *\
+    *  # CIRCLE 4
+\* ---------------- */
 .circle-4 {
   width: 100px;
   height: 100px;
@@ -149,7 +188,7 @@ section {
 
 /* ---------------- *\
     *  # FOOTER
-\* --------------------------------------- */
+\* ---------------- */
 .footer {
   padding: 20px;
   background-color: #8ccff7;
