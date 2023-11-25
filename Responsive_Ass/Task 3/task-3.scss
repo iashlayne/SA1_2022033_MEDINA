@@ -8,12 +8,18 @@ $element-color2: #43658b;
 $element-color3: #ed6663;
 $element-color4: #ffa372;
 
+/* ---------------------------------------------------------------- *\
+    *  # MIXIN ALIGN - aligning the whole elements of the website
+\* ---------------------------------------------------------------- */
 
 @mixin align(){
     display: flex;
     justify-content: center;
     align-items: center;
 }
+/* ---------------------------------------------*\
+    *  # MIXIN QUERY FOR MIN SIZE AND MAX SIZE
+\* ---------------------------------------------*/
 
 @mixin query($minimumsize, $maximumsize){
 
@@ -22,6 +28,10 @@ $element-color4: #ffa372;
 }
 
 }
+/* -------------------------------------------------------------------------------------------------------------------*\
+    *  # PIC-200 which shows in query of 0-480px it will display the image if above 480px then it will not be shown
+\* -------------------------------------------------------------------------------------------------------------------*/
+
 .pic-200{
     display: none;
     @include query(0px, 480px){
@@ -29,6 +39,9 @@ $element-color4: #ffa372;
         margin: auto;
     }
     }
+/* -------------------------------------------------------------------------------------------------------------------*\
+    *  # PIC-300 which shows in between of 481-800px it will display the image if above 800px then it will not be shown
+\* -------------------------------------------------------------------------------------------------------------------*/
 
 .pic-300{
     display: none;
@@ -37,6 +50,9 @@ $element-color4: #ffa372;
         margin: auto;
     }
 }
+/* -------------------------------------------------------------------------------------------------------------------*\
+    *  # PIC-400 which shows in 800px it will display the image if above 800px it will be shown as per the max width 
+\* -------------------------------------------------------------------------------------------------------------------*/
 .pic-400{
     display: block;
     margin: auto;
@@ -55,6 +71,9 @@ body{
     padding: 0;
 
 }
+/* ------------- *\
+    *  # MAIN 
+\* ------------- */
 main{
     @include align();
     align-items: normal;
@@ -62,6 +81,9 @@ main{
     width: 100%;
     background-color: white;
 }
+/* ---------------- *\
+    *  # SECTION
+\* ---------------- */
 
 section{
     display: flex;
@@ -90,35 +112,44 @@ section{
     margin-top: 40px;
 
 }
-
+/* -------------- *\
+    *  # ROW 1
+\* --------------*/
 .row-1{
     background-color: $element-color1;
     width: 100%;
     padding: 15px;
 
 }
-
+/* -------------- *\
+    *  # ROW 2
+\* --------------*/
 .row-2{
     background-color: $element-color2;
     width: 100%;
     padding: 15px;
 }
-
+/* -------------- *\
+    *  # ROW 3
+\* --------------*/
 .row-3{
     background-color: $element-color3;
     width: 100%;
     padding: 15px;
     
 }
+/* -------------- *\
+    *  # ROW 4
+\* -------------- */
 
 .row-4{
    background-color: $element-color4;
    width: 100%;
    padding: 15px;
 }
-/* --------------------------------------- *\
-    *  # CIRCLES for 1, 2, 3 and 4 (circle)
-\* --------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------ *\
+    *  # CIRCLES for 1, 2, 3 and 4 (circle) it will align in row(vertically) but in 620px it will be column(horizontally
+\* ------------------------------------------------------------------------------------------------------------------------ */
 
 .circles{
     @include align();
@@ -127,6 +158,9 @@ section{
         flex-direction: column;
     }
 }
+/* ---------------- *\
+    *  # CIRCLE 1
+\* ---------------- */
 .circle-1{
     width: 70px;
     height: 70px;
@@ -135,7 +169,9 @@ section{
     margin: 5px;
 }
 
-
+/* ---------------- *\
+    *  # CIRCLE 2
+\* ---------------- */
 .circle-2{
     width: 80px;
     height: 80px;
@@ -143,7 +179,9 @@ section{
     border-radius: 50%;
     margin: 5px;
 }
-
+/* ---------------- *\
+    *  # CIRCLE 3
+\* ---------------- */
 .circle-3{
     width: 90px;
     height: 90px;
@@ -151,7 +189,9 @@ section{
     border-radius: 50%;
     margin: 5px;
 }
-
+/* ---------------- *\
+    *  # CIRCLE 4
+\* ---------------- */
 .circle-4{
     width: 100px;
     height: 100px;
@@ -161,7 +201,7 @@ section{
 }
 /* ---------------- *\
     *  # FOOTER
-\* --------------------------------------- */
+\* ---------------- */
 
 .footer{
     padding: 20px;
