@@ -1,0 +1,158 @@
+/* --------------------------------*\
+    *  # SASS/SCSS ELEMENTS $$$
+\* --------------------------------*/
+.pic-200 {
+  display: none;
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .pic-200 {
+    display: block;
+    margin: auto;
+  }
+}
+
+.pic-300 {
+  display: none;
+}
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  .pic-300 {
+    display: block;
+    margin: auto;
+  }
+}
+
+.pic-400 {
+  display: block;
+  margin: auto;
+}
+@media screen and (min-width: 0px) and (max-width: 800px) {
+  .pic-400 {
+    display: none;
+  }
+}
+
+/* ------------- *\
+    *  # BODY
+\* ------------- */
+body {
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: normal;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 3px;
+  margin-bottom: 50px;
+}
+
+/* --------------------- *\
+    *  # HEADER 
+\* --------------------- */
+.header {
+  background-color: #8ccff7;
+  width: 100%;
+  height: auto;
+}
+
+/* --------------------------------------- *\
+    *  # ROW for 1, 2, 3 and 4 (lines)
+\* --------------------------------------- */
+.row {
+  display: grid;
+  grid-auto-rows: auto;
+  margin-top: 40px;
+}
+
+.row-1 {
+  background-color: #4e89ae;
+  width: 100%;
+  padding: 15px;
+}
+
+.row-2 {
+  background-color: #43658b;
+  width: 100%;
+  padding: 15px;
+}
+
+.row-3 {
+  background-color: #ed6663;
+  width: 100%;
+  padding: 15px;
+}
+
+.row-4 {
+  background-color: #ffa372;
+  width: 100%;
+  padding: 15px;
+}
+
+/* --------------------------------------- *\
+    *  # CIRCLES for 1, 2, 3 and 4 (circle)
+\* --------------------------------------- */
+.circles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+@media screen and (min-width: 0) and (max-width: 620px) {
+  .circles {
+    flex-direction: column;
+  }
+}
+
+.circle-1 {
+  width: 70px;
+  height: 70px;
+  background-color: #4e89ae;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.circle-2 {
+  width: 80px;
+  height: 80px;
+  background-color: #43658b;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.circle-3 {
+  width: 90px;
+  height: 90px;
+  background-color: #ed6663;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.circle-4 {
+  width: 100px;
+  height: 100px;
+  background-color: #ffa372;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+/* ---------------- *\
+    *  # FOOTER
+\* --------------------------------------- */
+.footer {
+  padding: 20px;
+  background-color: #8ccff7;
+  margin: 0;
+  box-sizing: border-box;
+}/*# sourceMappingURL=task-3.css.map */

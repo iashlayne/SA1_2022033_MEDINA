@@ -1,0 +1,183 @@
+/* --------------------------------*\
+    *  # SASS/SCSS ELEMENTS $$$
+\* --------------------------------*/
+$header-color: #8ccff7;
+$background-color: #e2eff1;
+$element-color1: #4e89ae;
+$element-color2: #43658b;
+$element-color3: #ed6663;
+$element-color4: #ffa372;
+
+
+@mixin align(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin query($minimumsize, $maximumsize){
+
+    @media screen and (min-width: $minimumsize) and (max-width: $maximumsize){
+       @content;
+}
+
+}
+.pic-200{
+    display: none;
+    @include query(0px, 480px){
+        display: block;
+        margin: auto;
+    }
+    }
+
+.pic-300{
+    display: none;
+    @include query(481px, 800px){
+        display: block;
+        margin: auto;
+    }
+}
+.pic-400{
+    display: block;
+    margin: auto;
+    @include query(0px, 800px){
+        display: none;
+    }
+}
+
+/* ------------- *\
+    *  # BODY
+\* ------------- */
+
+body{
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+
+}
+main{
+    @include align();
+    align-items: normal;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 3px;
+    margin-bottom: 50px;
+}
+/* --------------------- *\
+    *  # HEADER 
+\* --------------------- */
+
+.header{
+    background-color: $header-color;
+    width: 100%;
+    height: auto;
+}
+
+/* --------------------------------------- *\
+    *  # ROW for 1, 2, 3 and 4 (lines)
+\* --------------------------------------- */
+
+.row{
+    display: grid;
+    grid-auto-rows: auto;
+    margin-top: 40px;
+
+}
+
+.row-1{
+    background-color: $element-color1;
+    width: 100%;
+    padding: 15px;
+
+}
+
+.row-2{
+    background-color: $element-color2;
+    width: 100%;
+    padding: 15px;
+}
+
+.row-3{
+    background-color: $element-color3;
+    width: 100%;
+    padding: 15px;
+    
+}
+
+.row-4{
+   background-color: $element-color4;
+   width: 100%;
+   padding: 15px;
+}
+/* --------------------------------------- *\
+    *  # CIRCLES for 1, 2, 3 and 4 (circle)
+\* --------------------------------------- */
+
+.circles{
+    @include align();
+    flex-direction: row;
+    @include query(0, 620px){
+        flex-direction: column;
+    }
+}
+.circle-1{
+    width: 70px;
+    height: 70px;
+    background-color: $element-color1;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+
+.circle-2{
+    width: 80px;
+    height: 80px;
+    background-color: $element-color2;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.circle-3{
+    width: 90px;
+    height: 90px;
+    background-color: $element-color3;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.circle-4{
+    width: 100px;
+    height: 100px;
+    background-color: $element-color4;
+    border-radius: 50%;
+    margin: 5px;
+}
+/* ---------------- *\
+    *  # FOOTER
+\* --------------------------------------- */
+
+.footer{
+    padding: 20px;
+    background-color: $header-color;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+  
+      
+
+
+
+
+
+
