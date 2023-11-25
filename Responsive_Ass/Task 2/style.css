@@ -13,6 +13,10 @@ main{
     align-items: center;
     justify-content: center;
 }
+/* --------------------- *\
+    *  # NAVIGATION BAR
+\* --------------------- */
+
 .navbar{
     width: 100%;
     display: flex;
@@ -20,7 +24,9 @@ main{
     background-color: #0096ff;
     padding-top: 10px;
     padding-bottom: 10px;
-
+/* ------------------------------- *\
+    *  # NAVIGATION BAR CONTENTS
+\* ------------------------------- */
 }
 ul {
     margin-top: auto;
@@ -35,12 +41,18 @@ li {
     list-style: none;
     display: inline-block;
 }
+/* --------------------------------- *\
+    *  # NAVIGATION SEARCH: ..TEXT
+\* --------------------------------- */
 .navbar input[type=text]
 {
    margin: auto;
    padding: 10px;
    width: 100%;
 } 
+/* --------------------- *\
+    *  # WHATSON 
+\* --------------------- */
 .whatson{
     color:white;
     font-size:30px;
@@ -48,51 +60,19 @@ li {
     padding-left: 10px;
 }
 
-/*.navbar{
-    margin: 0;
-    padding: 0;
-    background-color: #0096ff;
-    width: 100%;
-    
-}
-.nav_content{
-    display: flex;
-    align-items:start;
-    justify-content: space-between;
-    padding: 30px;
-    box-sizing: border-box;
-}
-.nav_content a{
-    font-size: 20px;
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-}
-.navbar input[type=text]
-{
-    padding: 10px;
-    font-size: 15px;
-    border: 1px solid black;
-    text-align: left;
-    
-}
-
-
-.search-container{
-margin-left: 300px;
-margin-right:300px;
-
-}*/
-
-
+/* -------------------------------- *\
+    *  # BOX CONTAINER FOR MOVIES
+\* -------------------------------- */
 .box{
     display: flex;
     margin-left: 200px;
     margin-right: 200px;
     margin-top:50px
 }
-
-.movie,.movie2,.movie3,.movie4,.movie5{
+/* --------------------- *\
+    *  # MOVIES CONTENT
+\* --------------------- */
+.movie,.movie2,.movie3,.movie4{
     width: 200px;
     height: 600px;
     margin-bottom: 10px;
@@ -101,31 +81,41 @@ margin-right:300px;
     background-color: white;
 
 }
-
+/* --------------------- *\
+    *  # MOVIE - AVENGERS
+\* --------------------- */
 .container-1{
     width: 620px;
     height: 750px;
 
 }
-
+/* --------------------------------------------------- *\
+    *  # COLUMN - MOVIE2, MOVIE3, MOVIE4 - ALIGNMENT
+\* --------------------------------------------------- */
 .column{
     display: flex;
     flex-direction: column;
     margin-left: 10px;
 }
-
+/* ----------------------------- *\
+    *  # MOVIE IMG - AVENGERS
+\* ----------------------------- */
 .img-1{
     
     width: 620px;
     height: 550px;
 }
-
+/* ------------------------------------------------------------------- *\
+    *  # MOVIE IMG'S - LONE GUNMEN,RAGE,MILLENNIUM TRILOGY,PREDATORS
+\* ------------------------------------------------------------------- */
 .img-2,.img-3,.img-4,.img-5{
     border: 10px solid rgb(255, 255, 255);
     width: 180px;
     height: 280px;
 }
-
+/* ----------------------------- *\
+    *  # MORE INFO - BLUE BOX
+\* ----------------------------- */
 .bluebox,.bluebox3{
     background: #0096ff;
     width: 90px;
@@ -137,22 +127,31 @@ margin-right:300px;
     float: right;
     margin: 20px;   
 }
-
+/* ----------------------------------------------------- *\
+    *  # MORE INFO - TO ALIGNED THE BOX FOR MILLENNIUM
+\* ----------------------------------------------------- */
 .bluebox3{
     margin-top: 34.5px;
 }
-
+/* ---------------------------------- *\
+    *  # DESCRIPTION FOR EACH MOVIES
+\* ---------------------------------- */
 p {
    color: black;
    margin: 10px 10px 15px;
    font-size: 14.5px;
 }
+/* ----------------------------------------------------- *\
+    *  # MORE INFO - TO ALIGNED THE TEXT DIFFERENT BOX
+\* ----------------------------------------------------- */
 .p1{
     margin: 10px 12px 15px;
     font-size: 14.5px;
     line-height: 20px;
 }
-
+/* ----------------------------------------------------- *\
+    *  # TITLE FOR THE MOVIES - COLOR,SIZE AND ALIGNMENT
+\* ----------------------------------------------------- */
 #title{
     color: black;
     font-size: 20px;
@@ -160,9 +159,6 @@ p {
     font-weight: bold;
 
 }
-
-.nav_content a{
-    float: right;
-    font-size: 20px;
-    color: white;
-} 
+/* ----------------------------------------------------- *\
+    *  # MORE INFO - TO ALIGNED THE BOX FOR MILLENNIUM
+\* ----------------------------------------------------- */
